@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    width: 306px;
+    height: 306px;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.cell {
+    display: inline-block; /*div는 block요소라서 한줄을 다 차지하기 떄문에*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000; 
+}
