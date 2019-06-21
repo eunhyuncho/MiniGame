@@ -1,4 +1,4 @@
-const $cells = document.querySelectorAll(".cell");
+const $cells = document.querySelectorAll('.cell');
 let gamer = true;
 const status = [];
 
@@ -30,11 +30,11 @@ $cells.forEach(function ($cell, index) {
 function turnTomatoOrOrange () {
     if (gamer) {
         this.classList.add('tomato');
-        this.removeEventListener("click", turnTomatoOrOrange);
+        this.removeEventListener('click', turnTomatoOrOrange);
         status[this.classList[1]] = 'tomato';
     } else {
         this.classList.add('orange');
-        this.removeEventListener("click", turnTomatoOrOrange);
+        this.removeEventListener('click', turnTomatoOrOrange);
         status[this.classList[1]] = 'orange';
     }
     gamer = !gamer;
@@ -42,6 +42,7 @@ function turnTomatoOrOrange () {
     const result = findWinner();
 
     if(result){
-        
+       const modal = document.querySelector('.modal-text');
+        modal.classList.add('show');
     }
 }

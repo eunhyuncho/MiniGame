@@ -41,5 +41,9 @@ section {
 
 .modal-text {
     display: inline-block;
-    display:none;
+    display: none;
+}
+
+.modal-text.show {
+    display: block;
 }
